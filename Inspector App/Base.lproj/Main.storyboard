@@ -7,10 +7,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SettingsView-->
+        <scene sceneID="wqf-qq-wuC">
+            <objects>
+                <viewController title="SettingsView" id="K3v-ST-FOp" sceneMemberID="viewController">
+                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9TR-bT-xjn">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="No Settings here yet. Tap to return to dashboard.">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <segue destination="BYZ-38-t0r" kind="showDetail" animates="NO" id="ylX-90-iuQ"/>
+                        </connections>
+                    </button>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roV-fe-EhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="123"/>
+        </scene>
+        <!--DashboardView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Inspector_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="DashboardView" id="BYZ-38-t0r" customClass="ViewController" customModule="Inspector_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zni-vg-9o5"/>
                         <viewControllerLayoutGuide type="bottom" id="uPk-Yw-rNz"/>
@@ -33,6 +53,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="K3v-ST-FOp" kind="show" animates="NO" id="vyK-eF-a0K"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XC-TI-UVs">
                                         <color key="backgroundColor" red="0.81806282722513091" green="0.81806282722513091" blue="0.81806282722513091" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,6 +69,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="WXR-Xt-TFN" kind="show" animates="NO" id="68X-MD-P1u"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dk2-QZ-qEp">
                                         <color key="backgroundColor" red="0.81806282722513091" green="0.81806282722513091" blue="0.81806282722513091" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,6 +89,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="Joa-2a-1VW" kind="showDetail" animates="NO" action="showViewController:sender:" id="S5r-aW-Rwe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.35650630837130509" green="0.85276914267015713" blue="0.0" alpha="0.49720190600000003" colorSpace="calibratedRGB"/>
@@ -102,5 +131,152 @@
             </objects>
             <point key="canvasLocation" x="115.42968749999999" y="122.98682284040994"/>
         </scene>
+        <!--SearchReportView-->
+        <scene sceneID="deX-Wv-HaJ">
+            <objects>
+                <viewController title="SearchReportView" id="WXR-Xt-TFN" sceneMemberID="viewController">
+                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b1P-uz-hnh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Everybody is searching for something, just not here. Tap to return to the dashboard.">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <segue destination="BYZ-38-t0r" kind="showDetail" animates="NO" id="5b7-SD-fdT"/>
+                        </connections>
+                    </button>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STk-eq-Hjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-538"/>
+        </scene>
+        <!--InspectionView-->
+        <scene sceneID="dwn-wb-RGi">
+            <objects>
+                <viewController title="InspectionView" id="Joa-2a-1VW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="92i-pb-ZPw"/>
+                        <viewControllerLayoutGuide type="bottom" id="BX9-GB-Ipm"/>
+                    </layoutGuides>
+                    <stackView key="view" opaque="NO" contentMode="scaleToFill" id="Ntt-7U-Gpf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dgF-h1-Yra">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="x4O-1p-0NM">
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="aZC-x3-ReX"/>
+                                        </constraints>
+                                        <state key="normal" title="Address">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" animates="NO" action="showViewController:sender:" id="8Hf-zy-YvA"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-UD-iC2">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatCell" id="dY9-oV-NDU">
+                                                <rect key="frame" x="0.0" y="28" width="192" height="48"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dY9-oV-NDU" id="Siz-nP-OgT">
+                                                    <frame key="frameInset" width="192" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="zND-eM-uJ9"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IEH-Wa-lxw">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNh-8w-2sl">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWB-vS-PdS">
+                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Zone">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ4-zj-Dyq">
+                                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Category">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-hs-4H8">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtC-z9-iHg">
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="Edit">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggP-2w-bXx">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-uo-YE5">
+                                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" title="Expand">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-A6-WXY">
+                                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" title="Collapse">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="V7B-A6-WXY" firstAttribute="width" secondItem="8UH-uo-YE5" secondAttribute="width" id="Kwi-6B-tW4"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ggP-2w-bXx" firstAttribute="height" secondItem="XtC-z9-iHg" secondAttribute="height" id="0So-hb-ObZ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rQ4-zj-Dyq" firstAttribute="width" secondItem="Ogf-hs-4H8" secondAttribute="width" multiplier="2:1" id="GUv-Oo-Mv0"/>
+                                            <constraint firstItem="rQ4-zj-Dyq" firstAttribute="width" secondItem="rWB-vS-PdS" secondAttribute="width" id="MdI-9B-gC1"/>
+                                        </constraints>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="-1" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sae-bd-xUo">
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="oTF-cI-dPS">
+                                                <rect key="frame" x="0.0" y="28" width="832" height="96"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oTF-cI-dPS" id="4Xr-WF-Gs3">
+                                                    <frame key="frameInset" width="832" height="95"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NNh-8w-2sl" firstAttribute="height" secondItem="x4O-1p-0NM" secondAttribute="height" id="Oqg-sL-rsZ"/>
+                        </constraints>
+                    </stackView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXp-Md-7P2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-1200"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Hf-zy-YvA"/>
+    </inferredMetricsTieBreakers>
 </document>
