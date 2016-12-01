@@ -2,8 +2,8 @@
 //  Inspector_AppTests.swift
 //  Inspector AppTests
 //
-//  Created by User on 11/15/16.
-//  Copyright © 2016 Home Inspector Gadgets. All rights reserved.
+//  Created by Jared Speck on 11/30/16.
+//  Copyright © 2016 Jared Speck. All rights reserved.
 //
 
 import XCTest
