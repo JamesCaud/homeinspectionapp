@@ -13,7 +13,6 @@ class PaneTableViewCell: UITableViewCell {
     // MARK: Properties
     @IBOutlet weak var paneCellName: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
