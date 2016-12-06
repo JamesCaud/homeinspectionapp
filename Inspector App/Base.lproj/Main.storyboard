@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -201,30 +200,14 @@
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dY9-oV-NDU" id="Siz-nP-OgT">
                                                             <frame key="frameInset" width="192" height="47"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVN-VO-uIF">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="bottomMargin" secondItem="bVN-VO-uIF" secondAttribute="bottom" id="UBG-Ae-Pgd"/>
-                                                                <constraint firstItem="bVN-VO-uIF" firstAttribute="leading" secondItem="Siz-nP-OgT" secondAttribute="leadingMargin" id="nhB-1v-aCz"/>
-                                                                <constraint firstItem="bVN-VO-uIF" firstAttribute="top" secondItem="Siz-nP-OgT" secondAttribute="topMargin" id="wpI-k0-mPS"/>
-                                                            </constraints>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <connections>
-                                                            <outlet property="name" destination="bVN-VO-uIF" id="9oh-EA-pT0"/>
-                                                            <outlet property="paneCellName" destination="bVN-VO-uIF" id="pPV-PG-xgb"/>
-                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="192" id="zND-eM-uJ9"/>
+                                            <constraint firstAttribute="width" constant="192" id="VZ0-s2-VbM"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IEH-Wa-lxw">
@@ -300,7 +283,9 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="dgF-h1-Yra" firstAttribute="leading" secondItem="Ntt-7U-Gpf" secondAttribute="leading" id="LkA-VH-Rjn"/>
                                     <constraint firstItem="NNh-8w-2sl" firstAttribute="height" secondItem="x4O-1p-0NM" secondAttribute="height" id="Oqg-sL-rsZ"/>
+                                    <constraint firstItem="IEH-Wa-lxw" firstAttribute="leading" secondItem="dgF-h1-Yra" secondAttribute="trailing" id="QB1-go-CRy"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -315,10 +300,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXp-Md-7P2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008" y="-1196"/>
+            <point key="canvasLocation" x="1031" y="-1192"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="s7t-d1-Llp"/>
+        <segue reference="8Hf-zy-YvA"/>
     </inferredMetricsTieBreakers>
 </document>
