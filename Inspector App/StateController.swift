@@ -15,7 +15,7 @@ import UIKit
 class StateController {
     
     // Inspections cached locally on the device
-    private(set) var cachedInspections: [Inspection]!
+    private var cachedInspections: [Inspection]!
     
     // The current inspection being worked on (nil if not working on one)
     private(set) var curInsp: Inspection!

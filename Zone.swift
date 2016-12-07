@@ -6,4 +6,9 @@
 //  Copyright © 2016 Jared Speck. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Zone {
+    private(set) var name : String!
+    
+}
